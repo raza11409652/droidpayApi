@@ -5,7 +5,7 @@ function sendTextMsg($mobile , $msg)
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-    CURLOPT_URL => "http://api.msg91.com/api/sendhttp.php?country=91&sender=DROIDP&route=4&mobiles=$mobile&authkey=125859A41atJaHbk0D5c028bb8&encrypt=1&message=$msg&unicode=1",
+    CURLOPT_URL => "http://api.msg91.com/api/sendhttp.php?country=91&sender=DROIDP&route=4&mobiles=$mobile&authkey=$key&encrypt=1&message=$msg&unicode=1",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
